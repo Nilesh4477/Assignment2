@@ -1,0 +1,22 @@
+html
+  head
+    link(rel="stylesheet", href="static/css/style.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer")
+    title index page
+  body
+    include ./nav.pug
+    h1.mt-5.text-center.border.border-1.bg-info.p-4 Show Users Data
+    table.table.table-dark.table-striped
+        thead
+            tr
+                th(scope="col") Name
+                th(scope="col") Email
+                th(scope="col") Message
+        tbody
+            -for (var i = 0; i < result.length-1; ++i) {
+                tr
+                    td #{result[i].name}
+                    td #{result[i].email}
+                    td #{result[i].message}  
+            -}
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous")

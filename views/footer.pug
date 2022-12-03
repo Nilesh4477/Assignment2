@@ -1,0 +1,77 @@
+footer.container.mt-5
+  #carouselExampleCaptions.carousel.slide(data-bs-ride='carousel')
+    .carousel-indicators
+      button.active(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+      button(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide-to='1' aria-label='Slide 2')
+      button(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide-to='2' aria-label='Slide 3')
+    .carousel-inner
+      .carousel-item.carousel-item2.active
+        img.d-block.w-100(src='static/images/river.jpg' alt='...')
+        .carousel-caption.d-none.d-md-block(style='font-size:12px;')
+            img.rounded-circle(src='static/images/nilesh.jfif' alt='Cinque Terre' style='width: 10%; height: 10%;')
+            h5 First slide label
+            p Some representative placeholder content for the first slide.
+            b Billy Graham
+            p evening image
+      .carousel-item.carousel-item2
+        img.d-block.w-100(src='static/images/riv2.jpg' alt='...')
+        .carousel-caption.d-none.d-md-block
+          img.rounded-circle(src='static/images/nilesh.jfif' alt='Cinque Terre' style='width: 10%; height: 10%;')
+          h5 Second slide label
+          p Some representative placeholder content for the first slide.
+          b Billy Graham
+          p evening image
+      .carousel-item.carousel-item2
+        img.d-block.w-100(src='static/images/riv3.jpg' alt='...')
+        .carousel-caption.d-none.d-md-block
+          img.rounded-circle(src='static/images/nilesh.jfif' alt='Cinque Terre' style='width: 10%; height: 10%;')
+          h5 Third slide label
+          p Some representative placeholder content for the first slide.
+          b Billy Graham
+          p evening image
+    button.carousel-control-prev(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide='prev')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.visually-hidden Previous
+    button.carousel-control-next(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide='next')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.visually-hidden Next
+  .container.text-center
+    .row
+      .col.bg-primary.p-2
+        i.fa-brands.fa-facebook-f.border.p-1.mx-2(style='border-radius:50%;')
+        | FACEBOOK
+      .col.bg-info.p-2
+        i.fa-brands.fa-twitter.border.p-1.mx-2(style='border-radius:50%;')
+        | TWITTER
+      .col.bg-danger.p-2
+        i.fa-brands.fa-instagram.border.p-1.mx-2(style='border-radius:50%;')
+        | INSTAGRAM
+      .col.bg-warning.p-2
+        i.fa-brands.fa-dribbble.border.p-1.mx-2(style='border-radius:50%;')
+        | DRIBBBLE
+      .col.bg-secondary.p-2
+        i.fa-brands.fa-pinterest.border.p-1.mx-2(style='border-radius:50%;')
+        | PINTEREST
+  .ft.text-center.px-5
+    img(src='static/images/logo.jpg' alt='' style='height: 15%;width:10%;margin-top:20px;')
+    p(style='color: rgb(235, 224, 224); text-align:center;margin-top: 10px;')
+    | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum obcaecati harum molestias sapiente, ducimus
+    | veniam repellat aspernatur voluptates aliquam provident! Iure voluptatibus quis est veniam totam itaque nobis,
+    | quasi illum.
+    span
+      b(style='color: blue;font-size: 30px;') .
+      b(style='color: rgb(255, 0, 55);font-size: 30px;') .
+      b(style='color: rgb(179, 255, 0);font-size: 30px;') .
+    ul.justify-content-center
+        li
+            i.fa-brands.fa-cc-paypal(style='font-size: 25px;')
+        li
+            i.fa-brands.fa-cc-visa(style='font-size: 25px;')
+        li
+            i.fa-brands.fa-cc-mastercard(style='font-size: 25px;')
+        li
+            i.fa-brands.fa-cc-apple-pay(style='font-size: 25px;')
+        li
+            i.fa-brands.fa-cc-stripe(style='font-size: 25px;')
+        li
+            i.fa-brands.fa-cc-discover(style='font-size: 25px;')

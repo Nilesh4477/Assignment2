@@ -1,0 +1,32 @@
+doctype html
+head
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel="stylesheet", href="static/css/style.css")
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  // Bootstrap CSS
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous')
+  title index page
+body
+include ./nav.pug
+.container.my-5
+  form.p-5(method='post' action='/postdata')
+    h3(style='text-align: center;') Contact Us
+    .form-group
+      .input-group
+        .input-group-prepend
+          span.input-group-text.bg-white
+            i.fa.fa-user
+        input.form-control.border-left-0(name='name' type='name' placeholder='Name' required='')
+    .form-group
+      .input-group
+        .input-group-prepend
+          span.input-group-text.bg-white
+            i.fa.fa-envelope
+        input.form-control.border-left-0(name='email' type='email' placeholder='Email' required='')
+    .form-group
+      textarea#message.form-control(rows='5' placeholder='Enter message' name='message' required='')
+    button.btn.btn-primary.float-right(type='submit')
+      i.fa.fa-paper-plane
+      |  send
